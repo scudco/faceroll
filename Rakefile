@@ -7,10 +7,10 @@ begin
   require 'jeweler'
   Jeweler::Tasks.new do |s|
     s.name = "faceroll"
-    s.summary = "TODO"
+    s.summary = "Faceroll your way to Business Value!"
     s.email = "adamandersonis@gmail.com"
     s.homepage = "http://github.com/scudco/faceroll"
-    s.description = "TODO"
+    s.description = "Faceroll your way to Business Value!"
     s.authors = ["Adam Anderson"]
   end
 rescue LoadError
@@ -38,3 +38,33 @@ Rcov::RcovTask.new do |t|
 end
 
 task :default => :rcov
+
+### Faceroll!
+class Array
+  def random
+    self[Kernel::rand(self.size)]
+  end
+end
+
+desc "Do you have teh coverage!?"
+task :coverage do
+  puts "YOU HAVE A LOT OF CODE COVERAGE! 10,000%! Great JoB! KEEP IT UP!"
+end
+
+desc "Fix the bugz that your customers find!"
+task :fix_bug do
+  puts "BUG(S) FIXED. SHIP IT!"
+end
+
+desc "Make it look like your working"
+task :work do
+  def random_dots
+    "............................................................."[0,rand(30)+3]
+  end
+  important_technical_verbs = %w{ refactoring importing creating generating building restructuring }
+  important_technical_words = %w{ test import strategy controller model object diagram }
+  rand(30).times do
+    puts "#{important_technical_verbs.random} #{important_technical_words.random}#{random_dots}"
+  end
+  puts "DONE!!!11"
+end
