@@ -1,0 +1,11 @@
+#!/usr/bin/env ruby
+
+require 'rubygems'
+require 'lib/faceroll'
+
+if %w(-v --version).include? ARGV.first
+  puts "#{File.basename($0)} #{Faceroll::VERSION}"
+  exit(0)
+end
+
+Facerollr.new(*ARGV)
