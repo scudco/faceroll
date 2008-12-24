@@ -56,6 +56,10 @@ task :fix_bug do
   puts "BUG(S) FIXED. SHIP IT!"
 end
 
+task :go_agile do
+  puts "CONGRATZ U R NOW AGILE!  KEEP THOSE RELEASES GOING EVERY 3+ MONTHS AND WATCH THE PROFITS COME IN!"
+end
+
 desc "Make it look like your working"
 task :work do
   def random_dots

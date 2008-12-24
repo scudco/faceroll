@@ -12,7 +12,7 @@ module Faceroll
 
   class QualityCenter
   end
-
+  
   class Plone
   end
 end
