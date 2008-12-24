@@ -1,7 +1,7 @@
 #!/usr/bin/env ruby
 
 require 'rubygems'
-require 'lib/faceroll'
+require 'faceroll'
 
 if %w(-v --version).include? ARGV.first
   puts "#{File.basename($0)} #{Faceroll::VERSION}"

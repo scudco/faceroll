@@ -2,7 +2,6 @@ require 'rake'
 require 'rake/testtask'
 require 'rake/rdoctask'
 require 'rcov/rcovtask'
-require 'lib/faceroll/rake/tasks'
 
 begin
   require 'jeweler'
@@ -13,6 +12,8 @@ begin
     s.homepage = "http://github.com/scudco/faceroll"
     s.description = "Faceroll your way to Business Value!"
     s.authors = ["Adam Anderson"]
+    s.executables = ['faceroll']
+    s.files = FileList["[A-Z]*.*", "{bin,generators,lib,test,spec}/**/*"]
   end
 rescue LoadError
   puts "Jeweler not available. Install it with: sudo gem install technicalpickles-jeweler -s http://gems.github.com"

@@ -1,4 +1,7 @@
-require 'lib/faceroll'
+require 'rubygems'
+gem 'rake','>=0.8.3'
+require 'rake'
+require 'faceroll'
 
 namespace :faceroll do
   desc "Do you have teh coverage!?"

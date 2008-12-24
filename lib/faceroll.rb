@@ -1,4 +1,4 @@
-require 'lib/extensions/array'
+require 'extensions/array'
 
 module Faceroll
   VERSION = "1.0.0" # Faceroll is definitely a 1.0 product
