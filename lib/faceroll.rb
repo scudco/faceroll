@@ -13,6 +13,9 @@ module Faceroll
   class QualityCenter
   end
   
+  class SharePointEnterpriseEdition
+  end
+  
   class Plone
   end
 end
